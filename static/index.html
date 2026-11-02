@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 외모 점수 (재미용)</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <h1>AI 외모 점수 측정기</h1>
+  <p class="sub">사진 한 장으로 얼굴 대칭성·비율·스타일을 분석해 재미로 점수를 매겨 봅니다.</p>
+</header>
+
+<div class="disclaimer" role="note" id="topDisclaimer">
+  <strong>⚠ 재미용 AI 추정치입니다.</strong>
+  점수와 평가는 OpenCV 얼굴 특징점과 사진 품질을 바탕으로 한 단순 계산 결과이며,
+  실제 외모·매력·개인의 가치를 판단하지 않습니다. 업로드한 사진은 서버에 저장되지 않습니다.
+</div>
+
+<main>
+  <section class="panel">
+    <h2>1. 사진 선택</h2>
+    <label id="dropZone" class="drop" for="fileInput">
+      <input id="fileInput" type="file" accept="image/jpeg,image/png,image/webp,image/bmp">
+      <span id="dropText">클릭하거나 사진을 끌어다 놓으세요<br><small>JPG · PNG · WEBP · BMP, 최대 10MB</small></span>
+    </label>
+    <div id="previewWrap" class="preview hidden">
+      <img id="preview" alt="선택한 사진 미리보기">
+      <canvas id="overlay"></canvas>
+    </div>
+    <p id="fileInfo" class="muted"></p>
+    <button id="analyzeBtn" disabled>외모 점수 분석하기</button>
+    <div id="error" class="error hidden" role="alert"></div>
+  </section>
+
+  <section class="panel" id="resultPanel">
+    <h2>2. 분석 결과</h2>
+    <div id="placeholder" class="muted">사진을 선택하고 분석 버튼을 눌러 주세요.</div>
+    <div id="loading" class="hidden"><div class="spinner"></div> 얼굴을 분석하는 중…</div>
+    <div id="result" class="hidden">
+      <div class="score-head">
+        <div class="ring" id="ring"><div class="ring-inner"><span id="totalScore">0</span><small>/ 100</small></div></div>
+        <div>
+          <div class="grade">등급 <b id="grade">-</b></div>
+          <div class="badge">재미용 AI 추정치</div>
+        </div>
+      </div>
+      <div id="bars"></div>
+      <h3>평가 리포트</h3>
+      <ul id="report"></ul>
+      <details>
+        <summary>세부 측정값</summary>
+        <div id="metrics" class="metrics"></div>
+      </details>
+      <p class="disclaimer small" id="resultDisclaimer"></p>
+    </div>
+  </section>
+</main>
+<footer>로컬 실행 · 모델: OpenCV YuNet (CPU) · 결과는 오락 목적의 추정치입니다.</footer>
+<script src="/static/app.js"></script>
+</body>
+</html>
