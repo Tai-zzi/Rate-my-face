@@ -22,7 +22,8 @@ jobs:
     runs-on: [self-hosted, Windows]
     defaults:
       run:
-        shell: powershell
+        # PowerShell 7: Windows PowerShell 5.1 crashed (0xC0000005) inside the runner on this machine
+        shell: pwsh
     steps:
       - name: Check out deploy scripts
         uses: actions/checkout@v4

@@ -6,7 +6,9 @@ param(
 )
 $ErrorActionPreference = "Stop"
 $script = Join-Path $PSScriptRoot "monitor.ps1"
-$p = Start-Process powershell.exe -PassThru -WindowStyle Hidden -ArgumentList @(
+# run the monitor with the same PowerShell executable as this step (pwsh 7 in the workflow)
+$exe = (Get-Process -Id $PID).Path
+$p = Start-Process $exe -PassThru -WindowStyle Hidden -ArgumentList @(
     "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "`"$script`"", "-Url", $Url, "-OutDir", "`"$OutDir`"")
 Set-Content -Path (Join-Path $OutDir "monitor.pid") -Value $p.Id
 Write-Host "monitor started (pid $($p.Id)) -> $Url/api/analyze"
