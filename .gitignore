@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.log
+
+# Self-hosted runner 설치/실행 파일
+actions-runner/
+
+# 평가 데이터/캐시/검증 로그
+eval/data/
+eval/cache/
+verification/

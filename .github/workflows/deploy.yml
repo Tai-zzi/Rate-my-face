@@ -1,0 +1,83 @@
+name: CD - Zero-downtime deploy to self-hosted runner
+
+on:
+  workflow_run:
+    workflows: ["CI - Build, test and push Docker image"]
+    types: [completed]
+    branches: ["main"]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-local
+  cancel-in-progress: false
+
+env:
+  IMAGE_NAME: rate-my-face
+  SERVICE_URL: http://127.0.0.1:8000
+  TEST_IMAGE_URL: https://raw.githubusercontent.com/opencv/opencv/4.x/samples/data/lena.jpg
+
+jobs:
+  deploy:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: [self-hosted, Windows]
+    defaults:
+      run:
+        shell: powershell
+    steps:
+      - name: Check out deploy scripts
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+
+      - name: Add Docker Desktop CLI to PATH
+        run: |
+          $bin = "C:\Program Files\Docker\Docker\resources\bin"
+          if (Test-Path $bin) { Add-Content -Path $env:GITHUB_PATH -Value $bin }
+
+      - name: Verify Docker engine is running
+        run: docker version --format "client {{.Client.Version}} / server {{.Server.Version}}"
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Pull new image
+        run: |
+          $sha = "${{ github.event.workflow_run.head_sha || github.sha }}"
+          $image = "${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:$sha"
+          docker pull $image
+          if ($LASTEXITCODE -ne 0) { throw "docker pull failed: $image" }
+          Add-Content -Path $env:GITHUB_ENV -Value "DEPLOY_IMAGE=$image"
+          Add-Content -Path $env:GITHUB_ENV -Value "DEPLOY_SHA=$sha"
+
+      - name: Start independent monitoring process
+        run: |
+          $out = Join-Path $env:RUNNER_TEMP "rmf-monitor"
+          if (Test-Path $out) { Remove-Item $out -Recurse -Force }
+          New-Item -ItemType Directory -Path $out | Out-Null
+          Invoke-WebRequest -UseBasicParsing $env:TEST_IMAGE_URL -OutFile (Join-Path $out "test-face.jpg")
+          Add-Content -Path $env:GITHUB_ENV -Value "MONITOR_DIR=$out"
+          .\deploy\start-monitor.ps1 -Url $env:SERVICE_URL -OutDir $out
+
+      - name: Replace running app container (blue/green)
+        run: .\deploy\deploy.ps1 -Image $env:DEPLOY_IMAGE
+
+      - name: Keep monitoring for 30 seconds after deployment
+        if: always()
+        run: |
+          Start-Sleep -Seconds 30
+          .\deploy\stop-monitor.ps1 -OutDir $env:MONITOR_DIR
+
+      - name: Write verification summary
+        if: always()
+        run: .\deploy\summarize.ps1 -OutDir $env:MONITOR_DIR -Url $env:SERVICE_URL -ExpectedRevision $env:DEPLOY_SHA
+
+      - name: Upload verification logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: deploy-verification-${{ github.run_number }}
+          path: ${{ env.MONITOR_DIR }}/*.*
+          if-no-files-found: warn

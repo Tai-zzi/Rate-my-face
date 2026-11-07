@@ -1,0 +1,13 @@
+.git
+.github
+__pycache__
+*.pyc
+*.log
+actions-runner/
+deploy/
+eval/
+samples/
+README.md
+Dockerfile
+.dockerignore
+.gitignore

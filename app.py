@@ -23,6 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent
 MODEL_PATH = BASE_DIR / "models" / "face_detection_yunet_2023mar.onnx"
 STATIC_DIR = BASE_DIR / "static"
 
+# 배포 버전 식별용 (CI에서 빌드 인자로 주입, 무중단 배포 검증 시 응답에 포함)
+APP_VERSION = os.environ.get("APP_VERSION", "1.0.0")
+APP_REVISION = os.environ.get("APP_REVISION", "local")
+
 MAX_BYTES = 10 * 1024 * 1024  # 10MB
 ALLOWED_TYPES = {"image/jpeg", "image/png", "image/webp", "image/bmp"}
 DETECT_MAX_SIDE = 640  # 검출용 축소 크기 (CPU 속도)
@@ -267,6 +271,8 @@ def analyze(img: np.ndarray) -> dict:
         "disclaimer": DISCLAIMER,
         "model": "OpenCV YuNet face_detection_yunet_2023mar (CPU) + 특징점 기하/이미지 분석 휴리스틱",
         "elapsed_ms": round((time.perf_counter() - t0) * 1000, 1),
+        "version": APP_VERSION,
+        "revision": APP_REVISION,
     }
 
 
@@ -329,7 +335,7 @@ def build_report(total, d, s, roll, brightness, n_faces) -> list[str]:
 # ---------------------------------------------------------------------------
 # FastAPI
 # ---------------------------------------------------------------------------
-app = FastAPI(title="AI 외모 평가 (재미용)", version="1.0.0")
+app = FastAPI(title="AI 외모 평가 (재미용)", version=APP_VERSION)
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
 
@@ -351,7 +357,13 @@ async def index():
 
 @app.get("/api/health")
 async def health():
-    return {"ok": True, "model": MODEL_PATH.name, "opencv": cv2.__version__}
+    return {
+        "ok": True,
+        "model": MODEL_PATH.name,
+        "opencv": cv2.__version__,
+        "version": APP_VERSION,
+        "revision": APP_REVISION,
+    }
 
 
 @app.post("/api/analyze")
@@ -378,5 +390,6 @@ if __name__ == "__main__":
     import uvicorn
 
     port = int(os.environ.get("PORT", "8000"))
+    host = os.environ.get("HOST", "127.0.0.1")  # 컨테이너에서는 0.0.0.0
     print(f"\n  AI 외모 평가 앱 실행 중 → http://127.0.0.1:{port}  (종료: Ctrl+C)\n")
-    uvicorn.run(app, host="127.0.0.1", port=port)
+    uvicorn.run(app, host=host, port=port)

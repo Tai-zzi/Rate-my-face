@@ -23,6 +23,23 @@ python app.py
 - 비율: 눈 사이 거리 대비 눈~입 거리, 입 너비, 코 위치
 - 스타일: 선명도, 노출, 대비, 구도, 피부톤 균일도
 
+## Docker 실행
+```powershell
+docker build -t rate-my-face .
+docker run -d -p 127.0.0.1:8000:8000 rate-my-face
+```
+
+## CI/CD (HW3)
+```
+git push ─▶ CI (.github/workflows/ci.yml, ubuntu-latest)
+             빌드(모델 로드 검증) → 컨테이너 스모크 테스트 → Docker Hub push (:latest, :<sha>)
+          ─▶ CD (.github/workflows/deploy.yml, self-hosted Windows runner)
+             pull → 블루/그린 무중단 교체(deploy/deploy.ps1) → 1초 간격 실요청 모니터링 → Summary/Artifacts
+```
+- 서비스 주소: http://127.0.0.1:8000 (nginx 프록시 `rmf-proxy` → `rmf-app-blue` | `rmf-app-green`)
+- 필요한 GitHub Secrets: `DOCKERHUB_USERNAME`, `DOCKERHUB_TOKEN`
+- `GET /api/health`, `POST /api/analyze` 응답의 `version`/`revision`으로 배포 버전을 확인할 수 있습니다.
+
 ## 참고
 - OpenCV는 한글 경로의 모델 파일을 직접 열지 못하므로, 모델을 바이트 버퍼로 읽어 로드합니다.
 - 업로드 사진은 메모리에서만 처리하며 저장하지 않습니다. 서버는 127.0.0.1에만 바인딩됩니다.
