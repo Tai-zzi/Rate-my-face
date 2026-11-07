@@ -1,0 +1,3240 @@
+{
+ "report": {
+  "scoring_version": "v1-baseline",
+  "mapping_from_tune": {
+   "slope": -0.00173,
+   "intercept": 3.3245
+  },
+  "tune": {
+   "n": 30,
+   "n_scored": 30,
+   "failures": 0,
+   "plcc": -0.0096,
+   "srocc": -0.1337,
+   "mae": 0.5172,
+   "rmse": 0.5858
+  },
+  "eval": {
+   "n": 70,
+   "n_scored": 70,
+   "failures": 0,
+   "plcc": -0.1825,
+   "srocc": -0.1925,
+   "mae": 0.6427,
+   "rmse": 0.7421
+  },
+  "tune_component_corr": {
+   "symmetry": -0.083,
+   "proportion": 0.118,
+   "style": 0.063,
+   "skin": -0.051,
+   "pose": 0.309,
+   "sharpness": 0.05,
+   "exposure": 0.051,
+   "contrast": 0.12,
+   "composition": -0.008
+  }
+ },
+ "items": [
+  {
+   "image_name": "CM378.jpg",
+   "beauty_score": "3.5167",
+   "gender": "Male",
+   "race": "Caucasian",
+   "subset": "tune",
+   "source_index": "487",
+   "pred": 93.5,
+   "scores": {
+    "symmetry": 90.3,
+    "proportion": 99.4,
+    "style": 78.9,
+    "skin": 68.0,
+    "pose": 93.5
+   },
+   "style_details": {
+    "sharpness": 84.8,
+    "exposure": 94.0,
+    "contrast": 99.9,
+    "composition": 47.3
+   },
+   "metrics": {
+    "roll_degrees": -4.4,
+    "geometric_symmetry": 87.6,
+    "pixel_symmetry": 95.4,
+    "eye_mouth_ratio": 1.063,
+    "mouth_eye_ratio": 0.817,
+    "face_brightness": 155.8,
+    "detection_confidence": 0.947
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM1429.jpg",
+   "beauty_score": "2.5167",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "tune",
+   "source_index": "1308",
+   "pred": 90.4,
+   "scores": {
+    "symmetry": 87.0,
+    "proportion": 96.8,
+    "style": 60.5,
+    "skin": 81.9,
+    "pose": 94.2
+   },
+   "style_details": {
+    "sharpness": 64.3,
+    "exposure": 39.6,
+    "contrast": 56.8,
+    "composition": 62.6
+   },
+   "metrics": {
+    "roll_degrees": 4.1,
+    "geometric_symmetry": 85.7,
+    "pixel_symmetry": 89.5,
+    "eye_mouth_ratio": 1.046,
+    "mouth_eye_ratio": 0.868,
+    "face_brightness": 78.8,
+    "detection_confidence": 0.946
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM1736.jpg",
+   "beauty_score": "3.9667",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "tune",
+   "source_index": "2058",
+   "pred": 94.3,
+   "scores": {
+    "symmetry": 92.2,
+    "proportion": 92.8,
+    "style": 86.5,
+    "skin": 79.4,
+    "pose": 99.4
+   },
+   "style_details": {
+    "sharpness": 92.7,
+    "exposure": 96.9,
+    "contrast": 87.2,
+    "composition": 71.6
+   },
+   "metrics": {
+    "roll_degrees": 1.3,
+    "geometric_symmetry": 90.8,
+    "pixel_symmetry": 94.9,
+    "eye_mouth_ratio": 1.047,
+    "mouth_eye_ratio": 0.869,
+    "face_brightness": 128.7,
+    "detection_confidence": 0.951
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM1957.jpg",
+   "beauty_score": "4.4667",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "tune",
+   "source_index": "2096",
+   "pred": 91.8,
+   "scores": {
+    "symmetry": 80.4,
+    "proportion": 96.1,
+    "style": 80.9,
+    "skin": 50.0,
+    "pose": 92.3
+   },
+   "style_details": {
+    "sharpness": 84.6,
+    "exposure": 83.6,
+    "contrast": 99.6,
+    "composition": 82.0
+   },
+   "metrics": {
+    "roll_degrees": -4.8,
+    "geometric_symmetry": 88.6,
+    "pixel_symmetry": 65.1,
+    "eye_mouth_ratio": 1.069,
+    "mouth_eye_ratio": 0.841,
+    "face_brightness": 166.9,
+    "detection_confidence": 0.948
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM1986.jpg",
+   "beauty_score": "2.55",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "tune",
+   "source_index": "420",
+   "pred": 89.9,
+   "scores": {
+    "symmetry": 72.1,
+    "proportion": 88.6,
+    "style": 80.8,
+    "skin": 57.9,
+    "pose": 95.5
+   },
+   "style_details": {
+    "sharpness": 73.4,
+    "exposure": 99.0,
+    "contrast": 99.1,
+    "composition": 76.9
+   },
+   "metrics": {
+    "roll_degrees": -3.6,
+    "geometric_symmetry": 90.7,
+    "pixel_symmetry": 37.4,
+    "eye_mouth_ratio": 0.993,
+    "mouth_eye_ratio": 0.881,
+    "face_brightness": 133.7,
+    "detection_confidence": 0.956
+   },
+   "error": null
+  },
+  {
+   "image_name": "CF235.jpg",
+   "beauty_score": "2.9",
+   "gender": "Female",
+   "race": "Caucasian",
+   "subset": "tune",
+   "source_index": "914",
+   "pred": 90.1,
+   "scores": {
+    "symmetry": 68.5,
+    "proportion": 94.5,
+    "style": 80.5,
+    "skin": 91.8,
+    "pose": 98.5
+   },
+   "style_details": {
+    "sharpness": 82.7,
+    "exposure": 98.9,
+    "contrast": 84.8,
+    "composition": 47.1
+   },
+   "metrics": {
+    "roll_degrees": -2.1,
+    "geometric_symmetry": 83.6,
+    "pixel_symmetry": 40.3,
+    "eye_mouth_ratio": 1.093,
+    "mouth_eye_ratio": 0.878,
+    "face_brightness": 133.4,
+    "detection_confidence": 0.949
+   },
+   "error": null
+  },
+  {
+   "image_name": "CF278.jpg",
+   "beauty_score": "2.8333",
+   "gender": "Female",
+   "race": "Caucasian",
+   "subset": "tune",
+   "source_index": "1722",
+   "pred": 91.5,
+   "scores": {
+    "symmetry": 86.5,
+    "proportion": 87.8,
+    "style": 76.1,
+    "skin": 59.8,
+    "pose": 98.2
+   },
+   "style_details": {
+    "sharpness": 84.0,
+    "exposure": 85.8,
+    "contrast": 95.1,
+    "composition": 52.3
+   },
+   "metrics": {
+    "roll_degrees": -2.3,
+    "geometric_symmetry": 91.3,
+    "pixel_symmetry": 77.6,
+    "eye_mouth_ratio": 0.984,
+    "mouth_eye_ratio": 0.919,
+    "face_brightness": 115.1,
+    "detection_confidence": 0.945
+   },
+   "error": null
+  },
+  {
+   "image_name": "CF621.jpg",
+   "beauty_score": "3.95",
+   "gender": "Female",
+   "race": "Caucasian",
+   "subset": "tune",
+   "source_index": "2010",
+   "pred": 91.7,
+   "scores": {
+    "symmetry": 76.5,
+    "proportion": 95.9,
+    "style": 82.4,
+    "skin": 82.4,
+    "pose": 99.8
+   },
+   "style_details": {
+    "sharpness": 87.0,
+    "exposure": 88.1,
+    "contrast": 98.3,
+    "composition": 58.0
+   },
+   "metrics": {
+    "roll_degrees": -0.8,
+    "geometric_symmetry": 79.3,
+    "pixel_symmetry": 71.4,
+    "eye_mouth_ratio": 0.99,
+    "mouth_eye_ratio": 0.831,
+    "face_brightness": 162.6,
+    "detection_confidence": 0.955
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF1666.jpg",
+   "beauty_score": "3.4667",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "tune",
+   "source_index": "1806",
+   "pred": 84.3,
+   "scores": {
+    "symmetry": 36.8,
+    "proportion": 91.4,
+    "style": 75.1,
+    "skin": 39.4,
+    "pose": 99.8
+   },
+   "style_details": {
+    "sharpness": 82.6,
+    "exposure": 100.0,
+    "contrast": 98.7,
+    "composition": 48.2
+   },
+   "metrics": {
+    "roll_degrees": -0.8,
+    "geometric_symmetry": 56.7,
+    "pixel_symmetry": 0.0,
+    "eye_mouth_ratio": 0.997,
+    "mouth_eye_ratio": 0.882,
+    "face_brightness": 139.5,
+    "detection_confidence": 0.944
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM1836.jpg",
+   "beauty_score": "4.0667",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "tune",
+   "source_index": "982",
+   "pred": 91.5,
+   "scores": {
+    "symmetry": 88.6,
+    "proportion": 92.5,
+    "style": 69.3,
+    "skin": 66.5,
+    "pose": 99.6
+   },
+   "style_details": {
+    "sharpness": 71.3,
+    "exposure": 75.0,
+    "contrast": 82.7,
+    "composition": 52.5
+   },
+   "metrics": {
+    "roll_degrees": -1.1,
+    "geometric_symmetry": 90.7,
+    "pixel_symmetry": 84.7,
+    "eye_mouth_ratio": 1.0,
+    "mouth_eye_ratio": 0.875,
+    "face_brightness": 105.8,
+    "detection_confidence": 0.947
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF1883.jpg",
+   "beauty_score": "3.1333",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "tune",
+   "source_index": "10",
+   "pred": 92.1,
+   "scores": {
+    "symmetry": 91.6,
+    "proportion": 88.6,
+    "style": 73.7,
+    "skin": 48.4,
+    "pose": 99.9
+   },
+   "style_details": {
+    "sharpness": 98.6,
+    "exposure": 96.8,
+    "contrast": 47.1,
+    "composition": 52.3
+   },
+   "metrics": {
+    "roll_degrees": 0.4,
+    "geometric_symmetry": 90.2,
+    "pixel_symmetry": 94.2,
+    "eye_mouth_ratio": 0.937,
+    "mouth_eye_ratio": 0.86,
+    "face_brightness": 128.6,
+    "detection_confidence": 0.927
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF195.jpg",
+   "beauty_score": "2.9",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "tune",
+   "source_index": "330",
+   "pred": 93.8,
+   "scores": {
+    "symmetry": 97.1,
+    "proportion": 97.7,
+    "style": 72.8,
+    "skin": 87.3,
+    "pose": 100.0
+   },
+   "style_details": {
+    "sharpness": 63.3,
+    "exposure": 79.8,
+    "contrast": 91.2,
+    "composition": 55.5
+   },
+   "metrics": {
+    "roll_degrees": -0.2,
+    "geometric_symmetry": 95.5,
+    "pixel_symmetry": 100.0,
+    "eye_mouth_ratio": 1.041,
+    "mouth_eye_ratio": 0.819,
+    "face_brightness": 170.3,
+    "detection_confidence": 0.952
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF818.jpg",
+   "beauty_score": "3.05",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "tune",
+   "source_index": "453",
+   "pred": 81.8,
+   "scores": {
+    "symmetry": 21.9,
+    "proportion": 96.0,
+    "style": 74.9,
+    "skin": 54.6,
+    "pose": 83.0
+   },
+   "style_details": {
+    "sharpness": 92.9,
+    "exposure": 70.9,
+    "contrast": 98.8,
+    "composition": 49.5
+   },
+   "metrics": {
+    "roll_degrees": -7.3,
+    "geometric_symmetry": 33.7,
+    "pixel_symmetry": 0.0,
+    "eye_mouth_ratio": 1.105,
+    "mouth_eye_ratio": 0.82,
+    "face_brightness": 177.3,
+    "detection_confidence": 0.936
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF1502.jpg",
+   "beauty_score": "3.6833",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "tune",
+   "source_index": "1176",
+   "pred": 90.3,
+   "scores": {
+    "symmetry": 69.4,
+    "proportion": 91.6,
+    "style": 83.4,
+    "skin": 75.2,
+    "pose": 99.6
+   },
+   "style_details": {
+    "sharpness": 78.0,
+    "exposure": 98.1,
+    "contrast": 93.4,
+    "composition": 75.4
+   },
+   "metrics": {
+    "roll_degrees": 1.0,
+    "geometric_symmetry": 88.4,
+    "pixel_symmetry": 34.1,
+    "eye_mouth_ratio": 0.947,
+    "mouth_eye_ratio": 0.851,
+    "face_brightness": 131.1,
+    "detection_confidence": 0.938
+   },
+   "error": null
+  },
+  {
+   "image_name": "CM141.jpg",
+   "beauty_score": "2.6833",
+   "gender": "Male",
+   "race": "Caucasian",
+   "subset": "tune",
+   "source_index": "401",
+   "pred": 93.0,
+   "scores": {
+    "symmetry": 86.7,
+    "proportion": 96.9,
+    "style": 80.8,
+    "skin": 58.8,
+    "pose": 94.7
+   },
+   "style_details": {
+    "sharpness": 91.3,
+    "exposure": 100.0,
+    "contrast": 98.9,
+    "composition": 48.8
+   },
+   "metrics": {
+    "roll_degrees": -3.9,
+    "geometric_symmetry": 84.6,
+    "pixel_symmetry": 90.8,
+    "eye_mouth_ratio": 1.046,
+    "mouth_eye_ratio": 0.861,
+    "face_brightness": 139.7,
+    "detection_confidence": 0.955
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF630.jpg",
+   "beauty_score": "3.7833",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "tune",
+   "source_index": "1841",
+   "pred": 91.9,
+   "scores": {
+    "symmetry": 91.6,
+    "proportion": 96.9,
+    "style": 65.6,
+    "skin": 75.0,
+    "pose": 98.6
+   },
+   "style_details": {
+    "sharpness": 62.5,
+    "exposure": 56.1,
+    "contrast": 95.5,
+    "composition": 50.1
+   },
+   "metrics": {
+    "roll_degrees": 2.0,
+    "geometric_symmetry": 95.5,
+    "pixel_symmetry": 84.2,
+    "eye_mouth_ratio": 1.06,
+    "mouth_eye_ratio": 0.838,
+    "face_brightness": 91.6,
+    "detection_confidence": 0.94
+   },
+   "error": null
+  },
+  {
+   "image_name": "CM566.jpg",
+   "beauty_score": "2.6167",
+   "gender": "Male",
+   "race": "Caucasian",
+   "subset": "tune",
+   "source_index": "47",
+   "pred": 87.4,
+   "scores": {
+    "symmetry": 70.8,
+    "proportion": 83.7,
+    "style": 70.6,
+    "skin": 51.3,
+    "pose": 85.1
+   },
+   "style_details": {
+    "sharpness": 76.7,
+    "exposure": 83.5,
+    "contrast": 89.4,
+    "composition": 49.1
+   },
+   "metrics": {
+    "roll_degrees": -6.8,
+    "geometric_symmetry": 91.6,
+    "pixel_symmetry": 32.1,
+    "eye_mouth_ratio": 0.957,
+    "mouth_eye_ratio": 0.926,
+    "face_brightness": 112.9,
+    "detection_confidence": 0.954
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM1810.jpg",
+   "beauty_score": "2.55",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "tune",
+   "source_index": "2008",
+   "pred": 94.8,
+   "scores": {
+    "symmetry": 94.9,
+    "proportion": 97.8,
+    "style": 84.4,
+    "skin": 87.7,
+    "pose": 94.8
+   },
+   "style_details": {
+    "sharpness": 92.6,
+    "exposure": 77.0,
+    "contrast": 99.7,
+    "composition": 65.7
+   },
+   "metrics": {
+    "roll_degrees": -3.9,
+    "geometric_symmetry": 98.1,
+    "pixel_symmetry": 88.9,
+    "eye_mouth_ratio": 1.041,
+    "mouth_eye_ratio": 0.849,
+    "face_brightness": 172.5,
+    "detection_confidence": 0.94
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF513.jpg",
+   "beauty_score": "2.9333",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "tune",
+   "source_index": "1287",
+   "pred": 85.7,
+   "scores": {
+    "symmetry": 54.6,
+    "proportion": 87.2,
+    "style": 70.6,
+    "skin": 42.6,
+    "pose": 92.6
+   },
+   "style_details": {
+    "sharpness": 68.0,
+    "exposure": 66.4,
+    "contrast": 98.6,
+    "composition": 78.5
+   },
+   "metrics": {
+    "roll_degrees": -4.7,
+    "geometric_symmetry": 84.0,
+    "pixel_symmetry": 0.0,
+    "eye_mouth_ratio": 1.204,
+    "mouth_eye_ratio": 0.782,
+    "face_brightness": 99.3,
+    "detection_confidence": 0.934
+   },
+   "error": null
+  },
+  {
+   "image_name": "CF427.jpg",
+   "beauty_score": "2.75",
+   "gender": "Female",
+   "race": "Caucasian",
+   "subset": "tune",
+   "source_index": "861",
+   "pred": 84.1,
+   "scores": {
+    "symmetry": 47.9,
+    "proportion": 91.6,
+    "style": 71.4,
+    "skin": 33.8,
+    "pose": 65.6
+   },
+   "style_details": {
+    "sharpness": 100.0,
+    "exposure": 98.3,
+    "contrast": 46.6,
+    "composition": 48.3
+   },
+   "metrics": {
+    "roll_degrees": 11.0,
+    "geometric_symmetry": 73.8,
+    "pixel_symmetry": 0.0,
+    "eye_mouth_ratio": 1.004,
+    "mouth_eye_ratio": 0.903,
+    "face_brightness": 131.6,
+    "detection_confidence": 0.934
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM224.jpg",
+   "beauty_score": "2.6833",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "tune",
+   "source_index": "1627",
+   "pred": 88.7,
+   "scores": {
+    "symmetry": 70.6,
+    "proportion": 95.1,
+    "style": 72.9,
+    "skin": 39.4,
+    "pose": 80.4
+   },
+   "style_details": {
+    "sharpness": 84.8,
+    "exposure": 88.7,
+    "contrast": 88.2,
+    "composition": 52.9
+   },
+   "metrics": {
+    "roll_degrees": 7.9,
+    "geometric_symmetry": 81.1,
+    "pixel_symmetry": 51.2,
+    "eye_mouth_ratio": 1.036,
+    "mouth_eye_ratio": 0.87,
+    "face_brightness": 118.0,
+    "detection_confidence": 0.958
+   },
+   "error": null
+  },
+  {
+   "image_name": "CF665.jpg",
+   "beauty_score": "3.5833",
+   "gender": "Female",
+   "race": "Caucasian",
+   "subset": "tune",
+   "source_index": "1030",
+   "pred": 88.5,
+   "scores": {
+    "symmetry": 61.7,
+    "proportion": 98.7,
+    "style": 72.0,
+    "skin": 15.2,
+    "pose": 99.8
+   },
+   "style_details": {
+    "sharpness": 87.3,
+    "exposure": 96.2,
+    "contrast": 87.2,
+    "composition": 56.2
+   },
+   "metrics": {
+    "roll_degrees": 0.7,
+    "geometric_symmetry": 77.3,
+    "pixel_symmetry": 32.7,
+    "eye_mouth_ratio": 1.044,
+    "mouth_eye_ratio": 0.816,
+    "face_brightness": 152.6,
+    "detection_confidence": 0.944
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF1113.jpg",
+   "beauty_score": "3.35",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "tune",
+   "source_index": "1424",
+   "pred": 93.0,
+   "scores": {
+    "symmetry": 90.1,
+    "proportion": 96.4,
+    "style": 77.4,
+    "skin": 82.5,
+    "pose": 95.3
+   },
+   "style_details": {
+    "sharpness": 67.6,
+    "exposure": 72.9,
+    "contrast": 99.8,
+    "composition": 76.1
+   },
+   "metrics": {
+    "roll_degrees": -3.7,
+    "geometric_symmetry": 87.8,
+    "pixel_symmetry": 94.3,
+    "eye_mouth_ratio": 1.073,
+    "mouth_eye_ratio": 0.851,
+    "face_brightness": 104.2,
+    "detection_confidence": 0.94
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF321.jpg",
+   "beauty_score": "2.4167",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "tune",
+   "source_index": "1460",
+   "pred": 94.1,
+   "scores": {
+    "symmetry": 93.3,
+    "proportion": 92.1,
+    "style": 84.2,
+    "skin": 85.6,
+    "pose": 100.0
+   },
+   "style_details": {
+    "sharpness": 85.5,
+    "exposure": 96.4,
+    "contrast": 99.7,
+    "composition": 57.4
+   },
+   "metrics": {
+    "roll_degrees": -0.1,
+    "geometric_symmetry": 93.7,
+    "pixel_symmetry": 92.5,
+    "eye_mouth_ratio": 0.986,
+    "mouth_eye_ratio": 0.864,
+    "face_brightness": 152.2,
+    "detection_confidence": 0.946
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM943.jpg",
+   "beauty_score": "2.85",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "tune",
+   "source_index": "1541",
+   "pred": 92.2,
+   "scores": {
+    "symmetry": 77.5,
+    "proportion": 98.5,
+    "style": 84.4,
+    "skin": 77.7,
+    "pose": 94.0
+   },
+   "style_details": {
+    "sharpness": 72.3,
+    "exposure": 98.6,
+    "contrast": 95.5,
+    "composition": 85.2
+   },
+   "metrics": {
+    "roll_degrees": -4.2,
+    "geometric_symmetry": 89.9,
+    "pixel_symmetry": 54.6,
+    "eye_mouth_ratio": 1.046,
+    "mouth_eye_ratio": 0.797,
+    "face_brightness": 147.6,
+    "detection_confidence": 0.94
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF1388.jpg",
+   "beauty_score": "4.1667",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "tune",
+   "source_index": "2103",
+   "pred": 90.4,
+   "scores": {
+    "symmetry": 69.3,
+    "proportion": 92.7,
+    "style": 82.9,
+    "skin": 77.6,
+    "pose": 99.9
+   },
+   "style_details": {
+    "sharpness": 95.8,
+    "exposure": 96.6,
+    "contrast": 86.4,
+    "composition": 51.2
+   },
+   "metrics": {
+    "roll_degrees": -0.6,
+    "geometric_symmetry": 94.3,
+    "pixel_symmetry": 22.7,
+    "eye_mouth_ratio": 1.115,
+    "mouth_eye_ratio": 0.886,
+    "face_brightness": 151.9,
+    "detection_confidence": 0.948
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF131.jpg",
+   "beauty_score": "2.8167",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "tune",
+   "source_index": "312",
+   "pred": 92.1,
+   "scores": {
+    "symmetry": 87.2,
+    "proportion": 97.3,
+    "style": 72.2,
+    "skin": 71.9,
+    "pose": 97.3
+   },
+   "style_details": {
+    "sharpness": 73.1,
+    "exposure": 97.1,
+    "contrast": 65.4,
+    "composition": 51.2
+   },
+   "metrics": {
+    "roll_degrees": -2.8,
+    "geometric_symmetry": 89.1,
+    "pixel_symmetry": 83.6,
+    "eye_mouth_ratio": 1.0,
+    "mouth_eye_ratio": 0.822,
+    "face_brightness": 151.0,
+    "detection_confidence": 0.956
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM958.jpg",
+   "beauty_score": "2.3167",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "tune",
+   "source_index": "1394",
+   "pred": 94.9,
+   "scores": {
+    "symmetry": 96.5,
+    "proportion": 95.6,
+    "style": 84.2,
+    "skin": 85.7,
+    "pose": 99.0
+   },
+   "style_details": {
+    "sharpness": 89.0,
+    "exposure": 79.4,
+    "contrast": 99.9,
+    "composition": 68.9
+   },
+   "metrics": {
+    "roll_degrees": 1.7,
+    "geometric_symmetry": 94.7,
+    "pixel_symmetry": 100.0,
+    "eye_mouth_ratio": 1.022,
+    "mouth_eye_ratio": 0.882,
+    "face_brightness": 170.5,
+    "detection_confidence": 0.946
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF1406.jpg",
+   "beauty_score": "3.7667",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "tune",
+   "source_index": "367",
+   "pred": 89.3,
+   "scores": {
+    "symmetry": 65.5,
+    "proportion": 94.2,
+    "style": 77.6,
+    "skin": 85.0,
+    "pose": 99.2
+   },
+   "style_details": {
+    "sharpness": 82.0,
+    "exposure": 82.0,
+    "contrast": 91.9,
+    "composition": 50.3
+   },
+   "metrics": {
+    "roll_degrees": -1.5,
+    "geometric_symmetry": 85.3,
+    "pixel_symmetry": 28.9,
+    "eye_mouth_ratio": 0.981,
+    "mouth_eye_ratio": 0.822,
+    "face_brightness": 168.4,
+    "detection_confidence": 0.956
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF511.jpg",
+   "beauty_score": "2.7667",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "tune",
+   "source_index": "1196",
+   "pred": 93.3,
+   "scores": {
+    "symmetry": 86.5,
+    "proportion": 95.8,
+    "style": 85.8,
+    "skin": 84.2,
+    "pose": 91.7
+   },
+   "style_details": {
+    "sharpness": 83.4,
+    "exposure": 84.7,
+    "contrast": 95.3,
+    "composition": 84.6
+   },
+   "metrics": {
+    "roll_degrees": -5.0,
+    "geometric_symmetry": 93.6,
+    "pixel_symmetry": 73.4,
+    "eye_mouth_ratio": 1.072,
+    "mouth_eye_ratio": 0.842,
+    "face_brightness": 166.0,
+    "detection_confidence": 0.947
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF1536.jpg",
+   "beauty_score": "3.7",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "1178",
+   "pred": 91.0,
+   "scores": {
+    "symmetry": 75.5,
+    "proportion": 96.4,
+    "style": 78.5,
+    "skin": 54.4,
+    "pose": 96.9
+   },
+   "style_details": {
+    "sharpness": 99.5,
+    "exposure": 97.0,
+    "contrast": 75.3,
+    "composition": 49.1
+   },
+   "metrics": {
+    "roll_degrees": -3.0,
+    "geometric_symmetry": 86.2,
+    "pixel_symmetry": 55.7,
+    "eye_mouth_ratio": 1.05,
+    "mouth_eye_ratio": 0.845,
+    "face_brightness": 151.1,
+    "detection_confidence": 0.945
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM598.jpg",
+   "beauty_score": "2.5667",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "1873",
+   "pred": 95.0,
+   "scores": {
+    "symmetry": 98.5,
+    "proportion": 96.5,
+    "style": 81.5,
+    "skin": 89.3,
+    "pose": 99.8
+   },
+   "style_details": {
+    "sharpness": 75.1,
+    "exposure": 90.9,
+    "contrast": 87.0,
+    "composition": 71.5
+   },
+   "metrics": {
+    "roll_degrees": 0.8,
+    "geometric_symmetry": 97.7,
+    "pixel_symmetry": 100.0,
+    "eye_mouth_ratio": 1.101,
+    "mouth_eye_ratio": 0.762,
+    "face_brightness": 159.7,
+    "detection_confidence": 0.95
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF1870.jpg",
+   "beauty_score": "2.9833",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "577",
+   "pred": 93.8,
+   "scores": {
+    "symmetry": 91.3,
+    "proportion": 97.4,
+    "style": 79.7,
+    "skin": 89.4,
+    "pose": 99.7
+   },
+   "style_details": {
+    "sharpness": 65.3,
+    "exposure": 77.7,
+    "contrast": 98.0,
+    "composition": 82.2
+   },
+   "metrics": {
+    "roll_degrees": 1.0,
+    "geometric_symmetry": 86.7,
+    "pixel_symmetry": 100.0,
+    "eye_mouth_ratio": 0.997,
+    "mouth_eye_ratio": 0.82,
+    "face_brightness": 171.9,
+    "detection_confidence": 0.937
+   },
+   "error": null
+  },
+  {
+   "image_name": "CF153.jpg",
+   "beauty_score": "3.55",
+   "gender": "Female",
+   "race": "Caucasian",
+   "subset": "eval",
+   "source_index": "1265",
+   "pred": 84.6,
+   "scores": {
+    "symmetry": 41.8,
+    "proportion": 95.2,
+    "style": 74.9,
+    "skin": 74.0,
+    "pose": 79.5
+   },
+   "style_details": {
+    "sharpness": 88.6,
+    "exposure": 81.6,
+    "contrast": 71.5,
+    "composition": 50.8
+   },
+   "metrics": {
+    "roll_degrees": 8.1,
+    "geometric_symmetry": 47.7,
+    "pixel_symmetry": 30.8,
+    "eye_mouth_ratio": 1.135,
+    "mouth_eye_ratio": 0.83,
+    "face_brightness": 168.7,
+    "detection_confidence": 0.949
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM1910.jpg",
+   "beauty_score": "3.4667",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "101",
+   "pred": 94.4,
+   "scores": {
+    "symmetry": 90.0,
+    "proportion": 98.5,
+    "style": 85.1,
+    "skin": 75.4,
+    "pose": 98.7
+   },
+   "style_details": {
+    "sharpness": 78.1,
+    "exposure": 98.5,
+    "contrast": 98.9,
+    "composition": 79.2
+   },
+   "metrics": {
+    "roll_degrees": 1.9,
+    "geometric_symmetry": 89.4,
+    "pixel_symmetry": 91.0,
+    "eye_mouth_ratio": 1.041,
+    "mouth_eye_ratio": 0.843,
+    "face_brightness": 147.9,
+    "detection_confidence": 0.948
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM126.jpg",
+   "beauty_score": "1.7667",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "1510",
+   "pred": 89.5,
+   "scores": {
+    "symmetry": 79.9,
+    "proportion": 97.3,
+    "style": 60.0,
+    "skin": 0.0,
+    "pose": 98.4
+   },
+   "style_details": {
+    "sharpness": 69.6,
+    "exposure": 66.5,
+    "contrast": 97.2,
+    "composition": 56.1
+   },
+   "metrics": {
+    "roll_degrees": 2.1,
+    "geometric_symmetry": 94.7,
+    "pixel_symmetry": 52.5,
+    "eye_mouth_ratio": 1.1,
+    "mouth_eye_ratio": 0.816,
+    "face_brightness": 99.3,
+    "detection_confidence": 0.927
+   },
+   "error": null
+  },
+  {
+   "image_name": "CM42.jpg",
+   "beauty_score": "4.4833",
+   "gender": "Male",
+   "race": "Caucasian",
+   "subset": "eval",
+   "source_index": "1489",
+   "pred": 76.4,
+   "scores": {
+    "symmetry": 19.0,
+    "proportion": 81.2,
+    "style": 65.4,
+    "skin": 0.0,
+    "pose": 32.2
+   },
+   "style_details": {
+    "sharpness": 81.0,
+    "exposure": 62.0,
+    "contrast": 99.9,
+    "composition": 68.4
+   },
+   "metrics": {
+    "roll_degrees": 18.1,
+    "geometric_symmetry": 29.2,
+    "pixel_symmetry": 0.0,
+    "eye_mouth_ratio": 1.227,
+    "mouth_eye_ratio": 0.739,
+    "face_brightness": 184.0,
+    "detection_confidence": 0.929
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF835.jpg",
+   "beauty_score": "2.7833",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "1888",
+   "pred": 93.6,
+   "scores": {
+    "symmetry": 90.9,
+    "proportion": 96.3,
+    "style": 80.3,
+    "skin": 86.1,
+    "pose": 97.4
+   },
+   "style_details": {
+    "sharpness": 66.5,
+    "exposure": 97.6,
+    "contrast": 99.9,
+    "composition": 64.8
+   },
+   "metrics": {
+    "roll_degrees": -2.8,
+    "geometric_symmetry": 88.3,
+    "pixel_symmetry": 95.9,
+    "eye_mouth_ratio": 1.072,
+    "mouth_eye_ratio": 0.845,
+    "face_brightness": 130.0,
+    "detection_confidence": 0.934
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF912.jpg",
+   "beauty_score": "3.7833",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "1729",
+   "pred": 92.0,
+   "scores": {
+    "symmetry": 96.1,
+    "proportion": 71.8,
+    "style": 82.1,
+    "skin": 83.6,
+    "pose": 97.9
+   },
+   "style_details": {
+    "sharpness": 92.6,
+    "exposure": 83.9,
+    "contrast": 81.9,
+    "composition": 63.9
+   },
+   "metrics": {
+    "roll_degrees": -2.5,
+    "geometric_symmetry": 94.0,
+    "pixel_symmetry": 100.0,
+    "eye_mouth_ratio": 0.88,
+    "mouth_eye_ratio": 0.914,
+    "face_brightness": 166.6,
+    "detection_confidence": 0.956
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM1648.jpg",
+   "beauty_score": "4.0667",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "371",
+   "pred": 87.8,
+   "scores": {
+    "symmetry": 65.7,
+    "proportion": 76.8,
+    "style": 80.6,
+    "skin": 62.9,
+    "pose": 100.0
+   },
+   "style_details": {
+    "sharpness": 80.4,
+    "exposure": 98.8,
+    "contrast": 99.7,
+    "composition": 61.4
+   },
+   "metrics": {
+    "roll_degrees": 0.1,
+    "geometric_symmetry": 77.3,
+    "pixel_symmetry": 44.2,
+    "eye_mouth_ratio": 0.904,
+    "mouth_eye_ratio": 0.918,
+    "face_brightness": 146.9,
+    "detection_confidence": 0.954
+   },
+   "error": null
+  },
+  {
+   "image_name": "CF598.jpg",
+   "beauty_score": "4.2333",
+   "gender": "Female",
+   "race": "Caucasian",
+   "subset": "eval",
+   "source_index": "1633",
+   "pred": 91.4,
+   "scores": {
+    "symmetry": 71.8,
+    "proportion": 96.7,
+    "style": 85.9,
+    "skin": 76.3,
+    "pose": 95.0
+   },
+   "style_details": {
+    "sharpness": 88.2,
+    "exposure": 97.0,
+    "contrast": 100.0,
+    "composition": 68.0
+   },
+   "metrics": {
+    "roll_degrees": -3.9,
+    "geometric_symmetry": 72.3,
+    "pixel_symmetry": 70.9,
+    "eye_mouth_ratio": 1.05,
+    "mouth_eye_ratio": 0.848,
+    "face_brightness": 151.2,
+    "detection_confidence": 0.948
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM85.jpg",
+   "beauty_score": "1.95",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "2041",
+   "pred": 89.5,
+   "scores": {
+    "symmetry": 70.3,
+    "proportion": 98.9,
+    "style": 69.5,
+    "skin": 41.9,
+    "pose": 99.9
+   },
+   "style_details": {
+    "sharpness": 82.9,
+    "exposure": 65.8,
+    "contrast": 99.1,
+    "composition": 51.5
+   },
+   "metrics": {
+    "roll_degrees": -0.6,
+    "geometric_symmetry": 79.8,
+    "pixel_symmetry": 52.7,
+    "eye_mouth_ratio": 1.081,
+    "mouth_eye_ratio": 0.8,
+    "face_brightness": 181.2,
+    "detection_confidence": 0.93
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF171.jpg",
+   "beauty_score": "2.9667",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "476",
+   "pred": 92.5,
+   "scores": {
+    "symmetry": 85.6,
+    "proportion": 92.8,
+    "style": 82.2,
+    "skin": 78.4,
+    "pose": 93.4
+   },
+   "style_details": {
+    "sharpness": 82.5,
+    "exposure": 83.6,
+    "contrast": 98.8,
+    "composition": 70.7
+   },
+   "metrics": {
+    "roll_degrees": -4.4,
+    "geometric_symmetry": 84.8,
+    "pixel_symmetry": 87.1,
+    "eye_mouth_ratio": 1.018,
+    "mouth_eye_ratio": 0.87,
+    "face_brightness": 113.0,
+    "detection_confidence": 0.946
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM1028.jpg",
+   "beauty_score": "2.25",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "1742",
+   "pred": 92.5,
+   "scores": {
+    "symmetry": 91.0,
+    "proportion": 96.0,
+    "style": 77.5,
+    "skin": 88.9,
+    "pose": 82.4
+   },
+   "style_details": {
+    "sharpness": 57.7,
+    "exposure": 92.2,
+    "contrast": 96.5,
+    "composition": 69.7
+   },
+   "metrics": {
+    "roll_degrees": 7.5,
+    "geometric_symmetry": 86.1,
+    "pixel_symmetry": 100.0,
+    "eye_mouth_ratio": 1.057,
+    "mouth_eye_ratio": 0.867,
+    "face_brightness": 158.1,
+    "detection_confidence": 0.942
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF881.jpg",
+   "beauty_score": "4.0167",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "2074",
+   "pred": 92.7,
+   "scores": {
+    "symmetry": 86.5,
+    "proportion": 91.9,
+    "style": 81.6,
+    "skin": 85.7,
+    "pose": 99.2
+   },
+   "style_details": {
+    "sharpness": 89.5,
+    "exposure": 88.5,
+    "contrast": 93.1,
+    "composition": 51.1
+   },
+   "metrics": {
+    "roll_degrees": 1.6,
+    "geometric_symmetry": 92.9,
+    "pixel_symmetry": 74.7,
+    "eye_mouth_ratio": 0.985,
+    "mouth_eye_ratio": 0.879,
+    "face_brightness": 162.3,
+    "detection_confidence": 0.953
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM1801.jpg",
+   "beauty_score": "4.45",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "2011",
+   "pred": 91.5,
+   "scores": {
+    "symmetry": 84.6,
+    "proportion": 93.7,
+    "style": 73.4,
+    "skin": 53.6,
+    "pose": 99.4
+   },
+   "style_details": {
+    "sharpness": 80.3,
+    "exposure": 90.5,
+    "contrast": 80.8,
+    "composition": 55.3
+   },
+   "metrics": {
+    "roll_degrees": 1.3,
+    "geometric_symmetry": 91.7,
+    "pixel_symmetry": 71.4,
+    "eye_mouth_ratio": 1.002,
+    "mouth_eye_ratio": 0.879,
+    "face_brightness": 119.9,
+    "detection_confidence": 0.937
+   },
+   "error": null
+  },
+  {
+   "image_name": "CF50.jpg",
+   "beauty_score": "4.45",
+   "gender": "Female",
+   "race": "Caucasian",
+   "subset": "eval",
+   "source_index": "1630",
+   "pred": 90.3,
+   "scores": {
+    "symmetry": 69.5,
+    "proportion": 90.2,
+    "style": 84.3,
+    "skin": 80.9,
+    "pose": 98.4
+   },
+   "style_details": {
+    "sharpness": 79.4,
+    "exposure": 99.7,
+    "contrast": 98.3,
+    "composition": 68.6
+   },
+   "metrics": {
+    "roll_degrees": 2.1,
+    "geometric_symmetry": 63.2,
+    "pixel_symmetry": 81.2,
+    "eye_mouth_ratio": 0.99,
+    "mouth_eye_ratio": 0.903,
+    "face_brightness": 143.4,
+    "detection_confidence": 0.952
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF297.jpg",
+   "beauty_score": "4.3",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "2148",
+   "pred": 91.3,
+   "scores": {
+    "symmetry": 71.0,
+    "proportion": 97.6,
+    "style": 84.2,
+    "skin": 84.8,
+    "pose": 99.5
+   },
+   "style_details": {
+    "sharpness": 85.2,
+    "exposure": 84.6,
+    "contrast": 96.5,
+    "composition": 72.5
+   },
+   "metrics": {
+    "roll_degrees": 1.2,
+    "geometric_symmetry": 77.8,
+    "pixel_symmetry": 58.4,
+    "eye_mouth_ratio": 1.028,
+    "mouth_eye_ratio": 0.794,
+    "face_brightness": 166.0,
+    "detection_confidence": 0.947
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF157.jpg",
+   "beauty_score": "2.3667",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "1059",
+   "pred": 90.3,
+   "scores": {
+    "symmetry": 88.3,
+    "proportion": 96.2,
+    "style": 59.2,
+    "skin": 0.0,
+    "pose": 93.3
+   },
+   "style_details": {
+    "sharpness": 65.9,
+    "exposure": 68.7,
+    "contrast": 82.6,
+    "composition": 66.5
+   },
+   "metrics": {
+    "roll_degrees": 4.5,
+    "geometric_symmetry": 95.8,
+    "pixel_symmetry": 74.3,
+    "eye_mouth_ratio": 1.114,
+    "mouth_eye_ratio": 0.824,
+    "face_brightness": 101.0,
+    "detection_confidence": 0.931
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM1047.jpg",
+   "beauty_score": "4.45",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "1720",
+   "pred": 92.9,
+   "scores": {
+    "symmetry": 88.6,
+    "proportion": 96.0,
+    "style": 80.7,
+    "skin": 71.8,
+    "pose": 88.9
+   },
+   "style_details": {
+    "sharpness": 76.5,
+    "exposure": 86.1,
+    "contrast": 95.8,
+    "composition": 76.8
+   },
+   "metrics": {
+    "roll_degrees": -5.8,
+    "geometric_symmetry": 88.0,
+    "pixel_symmetry": 89.7,
+    "eye_mouth_ratio": 1.004,
+    "mouth_eye_ratio": 0.806,
+    "face_brightness": 164.6,
+    "detection_confidence": 0.954
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM1498.jpg",
+   "beauty_score": "3.0667",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "1962",
+   "pred": 93.7,
+   "scores": {
+    "symmetry": 92.1,
+    "proportion": 94.3,
+    "style": 80.4,
+    "skin": 75.1,
+    "pose": 99.9
+   },
+   "style_details": {
+    "sharpness": 80.5,
+    "exposure": 68.0,
+    "contrast": 96.9,
+    "composition": 84.1
+   },
+   "metrics": {
+    "roll_degrees": 0.5,
+    "geometric_symmetry": 95.3,
+    "pixel_symmetry": 86.1,
+    "eye_mouth_ratio": 1.133,
+    "mouth_eye_ratio": 0.811,
+    "face_brightness": 179.5,
+    "detection_confidence": 0.952
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM134.jpg",
+   "beauty_score": "3.9833",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "2101",
+   "pred": 93.4,
+   "scores": {
+    "symmetry": 86.4,
+    "proportion": 96.0,
+    "style": 83.6,
+    "skin": 78.4,
+    "pose": 99.4
+   },
+   "style_details": {
+    "sharpness": 76.1,
+    "exposure": 97.7,
+    "contrast": 92.7,
+    "composition": 77.6
+   },
+   "metrics": {
+    "roll_degrees": -1.3,
+    "geometric_symmetry": 97.2,
+    "pixel_symmetry": 66.2,
+    "eye_mouth_ratio": 1.073,
+    "mouth_eye_ratio": 0.823,
+    "face_brightness": 130.4,
+    "detection_confidence": 0.947
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF86.jpg",
+   "beauty_score": "2.3333",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "2121",
+   "pred": 93.4,
+   "scores": {
+    "symmetry": 86.1,
+    "proportion": 97.6,
+    "style": 82.2,
+    "skin": 87.8,
+    "pose": 100.0
+   },
+   "style_details": {
+    "sharpness": 78.7,
+    "exposure": 80.9,
+    "contrast": 99.3,
+    "composition": 71.8
+   },
+   "metrics": {
+    "roll_degrees": 0.3,
+    "geometric_symmetry": 87.6,
+    "pixel_symmetry": 83.3,
+    "eye_mouth_ratio": 1.085,
+    "mouth_eye_ratio": 0.836,
+    "face_brightness": 169.3,
+    "detection_confidence": 0.944
+   },
+   "error": null
+  },
+  {
+   "image_name": "CM335.jpg",
+   "beauty_score": "3.0",
+   "gender": "Male",
+   "race": "Caucasian",
+   "subset": "eval",
+   "source_index": "103",
+   "pred": 90.7,
+   "scores": {
+    "symmetry": 82.6,
+    "proportion": 89.6,
+    "style": 76.5,
+    "skin": 72.2,
+    "pose": 87.9
+   },
+   "style_details": {
+    "sharpness": 89.6,
+    "exposure": 76.3,
+    "contrast": 93.8,
+    "composition": 47.4
+   },
+   "metrics": {
+    "roll_degrees": -6.1,
+    "geometric_symmetry": 85.9,
+    "pixel_symmetry": 76.3,
+    "eye_mouth_ratio": 1.017,
+    "mouth_eye_ratio": 0.923,
+    "face_brightness": 106.9,
+    "detection_confidence": 0.96
+   },
+   "error": null
+  },
+  {
+   "image_name": "CF303.jpg",
+   "beauty_score": "2.6667",
+   "gender": "Female",
+   "race": "Caucasian",
+   "subset": "eval",
+   "source_index": "919",
+   "pred": 86.5,
+   "scores": {
+    "symmetry": 49.0,
+    "proportion": 96.4,
+    "style": 74.1,
+    "skin": 56.3,
+    "pose": 97.9
+   },
+   "style_details": {
+    "sharpness": 84.4,
+    "exposure": 92.9,
+    "contrast": 78.7,
+    "composition": 49.7
+   },
+   "metrics": {
+    "roll_degrees": 2.4,
+    "geometric_symmetry": 75.5,
+    "pixel_symmetry": 0.0,
+    "eye_mouth_ratio": 1.006,
+    "mouth_eye_ratio": 0.847,
+    "face_brightness": 157.2,
+    "detection_confidence": 0.952
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM1071.jpg",
+   "beauty_score": "2.1167",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "528",
+   "pred": 93.1,
+   "scores": {
+    "symmetry": 90.7,
+    "proportion": 87.5,
+    "style": 83.5,
+    "skin": 57.1,
+    "pose": 98.8
+   },
+   "style_details": {
+    "sharpness": 80.8,
+    "exposure": 99.7,
+    "contrast": 100.0,
+    "composition": 78.7
+   },
+   "metrics": {
+    "roll_degrees": 1.8,
+    "geometric_symmetry": 96.1,
+    "pixel_symmetry": 80.8,
+    "eye_mouth_ratio": 0.952,
+    "mouth_eye_ratio": 0.882,
+    "face_brightness": 136.8,
+    "detection_confidence": 0.949
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM1785.jpg",
+   "beauty_score": "3.0",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "200",
+   "pred": 93.4,
+   "scores": {
+    "symmetry": 86.9,
+    "proportion": 96.5,
+    "style": 85.6,
+    "skin": 77.9,
+    "pose": 91.5
+   },
+   "style_details": {
+    "sharpness": 86.6,
+    "exposure": 100.0,
+    "contrast": 94.9,
+    "composition": 68.3
+   },
+   "metrics": {
+    "roll_degrees": -5.1,
+    "geometric_symmetry": 87.5,
+    "pixel_symmetry": 85.8,
+    "eye_mouth_ratio": 1.122,
+    "mouth_eye_ratio": 0.82,
+    "face_brightness": 140.4,
+    "detection_confidence": 0.934
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF1584.jpg",
+   "beauty_score": "3.8333",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "2143",
+   "pred": 93.3,
+   "scores": {
+    "symmetry": 85.2,
+    "proportion": 98.6,
+    "style": 82.4,
+    "skin": 94.6,
+    "pose": 98.4
+   },
+   "style_details": {
+    "sharpness": 84.6,
+    "exposure": 100.0,
+    "contrast": 83.7,
+    "composition": 51.7
+   },
+   "metrics": {
+    "roll_degrees": -2.2,
+    "geometric_symmetry": 85.0,
+    "pixel_symmetry": 85.4,
+    "eye_mouth_ratio": 1.038,
+    "mouth_eye_ratio": 0.827,
+    "face_brightness": 138.9,
+    "detection_confidence": 0.951
+   },
+   "error": null
+  },
+  {
+   "image_name": "CM51.jpg",
+   "beauty_score": "2.4833",
+   "gender": "Male",
+   "race": "Caucasian",
+   "subset": "eval",
+   "source_index": "1758",
+   "pred": 93.1,
+   "scores": {
+    "symmetry": 94.7,
+    "proportion": 89.3,
+    "style": 78.0,
+    "skin": 65.7,
+    "pose": 97.9
+   },
+   "style_details": {
+    "sharpness": 85.1,
+    "exposure": 98.5,
+    "contrast": 88.7,
+    "composition": 48.0
+   },
+   "metrics": {
+    "roll_degrees": -2.5,
+    "geometric_symmetry": 91.8,
+    "pixel_symmetry": 100.0,
+    "eye_mouth_ratio": 0.968,
+    "mouth_eye_ratio": 0.87,
+    "face_brightness": 132.1,
+    "detection_confidence": 0.947
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF303.jpg",
+   "beauty_score": "2.9",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "1925",
+   "pred": 92.1,
+   "scores": {
+    "symmetry": 84.4,
+    "proportion": 97.2,
+    "style": 76.6,
+    "skin": 79.5,
+    "pose": 93.8
+   },
+   "style_details": {
+    "sharpness": 79.4,
+    "exposure": 78.3,
+    "contrast": 96.8,
+    "composition": 53.2
+   },
+   "metrics": {
+    "roll_degrees": -4.3,
+    "geometric_symmetry": 90.9,
+    "pixel_symmetry": 72.1,
+    "eye_mouth_ratio": 1.105,
+    "mouth_eye_ratio": 0.795,
+    "face_brightness": 108.5,
+    "detection_confidence": 0.947
+   },
+   "error": null
+  },
+  {
+   "image_name": "CF723.jpg",
+   "beauty_score": "3.3333",
+   "gender": "Female",
+   "race": "Caucasian",
+   "subset": "eval",
+   "source_index": "583",
+   "pred": 88.5,
+   "scores": {
+    "symmetry": 65.1,
+    "proportion": 86.3,
+    "style": 82.4,
+    "skin": 79.8,
+    "pose": 88.1
+   },
+   "style_details": {
+    "sharpness": 75.1,
+    "exposure": 85.4,
+    "contrast": 99.8,
+    "composition": 79.3
+   },
+   "metrics": {
+    "roll_degrees": -6.0,
+    "geometric_symmetry": 67.7,
+    "pixel_symmetry": 60.4,
+    "eye_mouth_ratio": 0.942,
+    "mouth_eye_ratio": 0.89,
+    "face_brightness": 165.3,
+    "detection_confidence": 0.938
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF1314.jpg",
+   "beauty_score": "2.75",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "1974",
+   "pred": 93.8,
+   "scores": {
+    "symmetry": 90.5,
+    "proportion": 97.6,
+    "style": 81.6,
+    "skin": 87.2,
+    "pose": 97.5
+   },
+   "style_details": {
+    "sharpness": 92.4,
+    "exposure": 82.5,
+    "contrast": 97.5,
+    "composition": 48.2
+   },
+   "metrics": {
+    "roll_degrees": -2.7,
+    "geometric_symmetry": 91.8,
+    "pixel_symmetry": 88.0,
+    "eye_mouth_ratio": 1.026,
+    "mouth_eye_ratio": 0.852,
+    "face_brightness": 167.9,
+    "detection_confidence": 0.951
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM1798.jpg",
+   "beauty_score": "3.0167",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "937",
+   "pred": 94.2,
+   "scores": {
+    "symmetry": 93.4,
+    "proportion": 96.7,
+    "style": 81.4,
+    "skin": 92.3,
+    "pose": 99.7
+   },
+   "style_details": {
+    "sharpness": 86.5,
+    "exposure": 77.6,
+    "contrast": 91.3,
+    "composition": 61.9
+   },
+   "metrics": {
+    "roll_degrees": -0.9,
+    "geometric_symmetry": 92.4,
+    "pixel_symmetry": 95.2,
+    "eye_mouth_ratio": 1.034,
+    "mouth_eye_ratio": 0.857,
+    "face_brightness": 172.1,
+    "detection_confidence": 0.945
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM1672.jpg",
+   "beauty_score": "2.9667",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "499",
+   "pred": 91.8,
+   "scores": {
+    "symmetry": 78.3,
+    "proportion": 96.7,
+    "style": 82.8,
+    "skin": 78.4,
+    "pose": 91.3
+   },
+   "style_details": {
+    "sharpness": 74.3,
+    "exposure": 100.0,
+    "contrast": 78.6,
+    "composition": 84.7
+   },
+   "metrics": {
+    "roll_degrees": -5.1,
+    "geometric_symmetry": 82.5,
+    "pixel_symmetry": 70.7,
+    "eye_mouth_ratio": 1.074,
+    "mouth_eye_ratio": 0.85,
+    "face_brightness": 138.6,
+    "detection_confidence": 0.954
+   },
+   "error": null
+  },
+  {
+   "image_name": "CF638.jpg",
+   "beauty_score": "3.75",
+   "gender": "Female",
+   "race": "Caucasian",
+   "subset": "eval",
+   "source_index": "1871",
+   "pred": 93.3,
+   "scores": {
+    "symmetry": 93.0,
+    "proportion": 99.0,
+    "style": 74.1,
+    "skin": 53.9,
+    "pose": 95.6
+   },
+   "style_details": {
+    "sharpness": 77.2,
+    "exposure": 91.5,
+    "contrast": 98.6,
+    "composition": 48.6
+   },
+   "metrics": {
+    "roll_degrees": -3.6,
+    "geometric_symmetry": 97.4,
+    "pixel_symmetry": 84.8,
+    "eye_mouth_ratio": 1.045,
+    "mouth_eye_ratio": 0.792,
+    "face_brightness": 158.9,
+    "detection_confidence": 0.946
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF1191.jpg",
+   "beauty_score": "4.2333",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "1922",
+   "pred": 90.3,
+   "scores": {
+    "symmetry": 80.0,
+    "proportion": 79.1,
+    "style": 80.9,
+    "skin": 77.4,
+    "pose": 99.3
+   },
+   "style_details": {
+    "sharpness": 100.0,
+    "exposure": 78.0,
+    "contrast": 92.8,
+    "composition": 48.9
+   },
+   "metrics": {
+    "roll_degrees": -1.4,
+    "geometric_symmetry": 93.2,
+    "pixel_symmetry": 55.5,
+    "eye_mouth_ratio": 0.922,
+    "mouth_eye_ratio": 0.921,
+    "face_brightness": 171.7,
+    "detection_confidence": 0.953
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM1646.jpg",
+   "beauty_score": "3.9833",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "1028",
+   "pred": 93.7,
+   "scores": {
+    "symmetry": 90.9,
+    "proportion": 96.0,
+    "style": 83.0,
+    "skin": 83.8,
+    "pose": 93.0
+   },
+   "style_details": {
+    "sharpness": 81.2,
+    "exposure": 87.6,
+    "contrast": 99.9,
+    "composition": 67.9
+   },
+   "metrics": {
+    "roll_degrees": -4.6,
+    "geometric_symmetry": 92.8,
+    "pixel_symmetry": 87.4,
+    "eye_mouth_ratio": 1.015,
+    "mouth_eye_ratio": 0.846,
+    "face_brightness": 116.9,
+    "detection_confidence": 0.956
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF1083.jpg",
+   "beauty_score": "4.4",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "1646",
+   "pred": 94.1,
+   "scores": {
+    "symmetry": 96.6,
+    "proportion": 89.4,
+    "style": 82.6,
+    "skin": 81.7,
+    "pose": 99.8
+   },
+   "style_details": {
+    "sharpness": 83.0,
+    "exposure": 98.9,
+    "contrast": 88.3,
+    "composition": 62.3
+   },
+   "metrics": {
+    "roll_degrees": 0.7,
+    "geometric_symmetry": 94.8,
+    "pixel_symmetry": 100.0,
+    "eye_mouth_ratio": 0.963,
+    "mouth_eye_ratio": 0.875,
+    "face_brightness": 146.8,
+    "detection_confidence": 0.948
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM1879.jpg",
+   "beauty_score": "3.7667",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "1260",
+   "pred": 90.1,
+   "scores": {
+    "symmetry": 69.6,
+    "proportion": 97.6,
+    "style": 76.0,
+    "skin": 18.9,
+    "pose": 99.9
+   },
+   "style_details": {
+    "sharpness": 76.4,
+    "exposure": 99.5,
+    "contrast": 99.6,
+    "composition": 76.7
+   },
+   "metrics": {
+    "roll_degrees": -0.5,
+    "geometric_symmetry": 90.8,
+    "pixel_symmetry": 30.3,
+    "eye_mouth_ratio": 1.016,
+    "mouth_eye_ratio": 0.839,
+    "face_brightness": 135.7,
+    "detection_confidence": 0.942
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF1235.jpg",
+   "beauty_score": "2.5333",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "2055",
+   "pred": 91.7,
+   "scores": {
+    "symmetry": 74.8,
+    "proportion": 99.6,
+    "style": 82.7,
+    "skin": 85.5,
+    "pose": 94.7
+   },
+   "style_details": {
+    "sharpness": 92.8,
+    "exposure": 97.3,
+    "contrast": 87.1,
+    "composition": 47.6
+   },
+   "metrics": {
+    "roll_degrees": -4.0,
+    "geometric_symmetry": 85.7,
+    "pixel_symmetry": 54.5,
+    "eye_mouth_ratio": 1.063,
+    "mouth_eye_ratio": 0.812,
+    "face_brightness": 129.4,
+    "detection_confidence": 0.951
+   },
+   "error": null
+  },
+  {
+   "image_name": "CF230.jpg",
+   "beauty_score": "2.7833",
+   "gender": "Female",
+   "race": "Caucasian",
+   "subset": "eval",
+   "source_index": "1961",
+   "pred": 91.3,
+   "scores": {
+    "symmetry": 74.7,
+    "proportion": 96.8,
+    "style": 80.2,
+    "skin": 75.1,
+    "pose": 99.3
+   },
+   "style_details": {
+    "sharpness": 85.0,
+    "exposure": 92.2,
+    "contrast": 99.5,
+    "composition": 50.4
+   },
+   "metrics": {
+    "roll_degrees": 1.4,
+    "geometric_symmetry": 82.6,
+    "pixel_symmetry": 60.0,
+    "eye_mouth_ratio": 1.031,
+    "mouth_eye_ratio": 0.867,
+    "face_brightness": 121.8,
+    "detection_confidence": 0.951
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM266.jpg",
+   "beauty_score": "2.8833",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "1773",
+   "pred": 89.5,
+   "scores": {
+    "symmetry": 76.3,
+    "proportion": 86.2,
+    "style": 76.5,
+    "skin": 41.5,
+    "pose": 89.6
+   },
+   "style_details": {
+    "sharpness": 77.5,
+    "exposure": 89.5,
+    "contrast": 97.4,
+    "composition": 72.4
+   },
+   "metrics": {
+    "roll_degrees": 5.6,
+    "geometric_symmetry": 80.4,
+    "pixel_symmetry": 68.7,
+    "eye_mouth_ratio": 0.965,
+    "mouth_eye_ratio": 0.922,
+    "face_brightness": 118.8,
+    "detection_confidence": 0.955
+   },
+   "error": null
+  },
+  {
+   "image_name": "CM573.jpg",
+   "beauty_score": "2.8167",
+   "gender": "Male",
+   "race": "Caucasian",
+   "subset": "eval",
+   "source_index": "829",
+   "pred": 84.1,
+   "scores": {
+    "symmetry": 39.3,
+    "proportion": 97.1,
+    "style": 71.2,
+    "skin": 0.0,
+    "pose": 83.6
+   },
+   "style_details": {
+    "sharpness": 88.0,
+    "exposure": 99.6,
+    "contrast": 99.9,
+    "composition": 49.3
+   },
+   "metrics": {
+    "roll_degrees": 7.2,
+    "geometric_symmetry": 55.2,
+    "pixel_symmetry": 9.7,
+    "eye_mouth_ratio": 1.115,
+    "mouth_eye_ratio": 0.823,
+    "face_brightness": 144.2,
+    "detection_confidence": 0.947
+   },
+   "error": null
+  },
+  {
+   "image_name": "CM125.jpg",
+   "beauty_score": "2.3667",
+   "gender": "Male",
+   "race": "Caucasian",
+   "subset": "eval",
+   "source_index": "1205",
+   "pred": 94.3,
+   "scores": {
+    "symmetry": 99.0,
+    "proportion": 97.4,
+    "style": 74.9,
+    "skin": 84.2,
+    "pose": 99.8
+   },
+   "style_details": {
+    "sharpness": 74.6,
+    "exposure": 99.4,
+    "contrast": 63.6,
+    "composition": 52.3
+   },
+   "metrics": {
+    "roll_degrees": -0.8,
+    "geometric_symmetry": 98.7,
+    "pixel_symmetry": 99.4,
+    "eye_mouth_ratio": 1.084,
+    "mouth_eye_ratio": 0.845,
+    "face_brightness": 135.0,
+    "detection_confidence": 0.947
+   },
+   "error": null
+  },
+  {
+   "image_name": "CF58.jpg",
+   "beauty_score": "2.2833",
+   "gender": "Female",
+   "race": "Caucasian",
+   "subset": "eval",
+   "source_index": "1101",
+   "pred": 89.9,
+   "scores": {
+    "symmetry": 73.6,
+    "proportion": 91.6,
+    "style": 82.9,
+    "skin": 77.7,
+    "pose": 77.4
+   },
+   "style_details": {
+    "sharpness": 91.3,
+    "exposure": 94.9,
+    "contrast": 100.0,
+    "composition": 49.2
+   },
+   "metrics": {
+    "roll_degrees": -8.6,
+    "geometric_symmetry": 87.3,
+    "pixel_symmetry": 48.0,
+    "eye_mouth_ratio": 1.169,
+    "mouth_eye_ratio": 0.788,
+    "face_brightness": 125.4,
+    "detection_confidence": 0.949
+   },
+   "error": null
+  },
+  {
+   "image_name": "CM708.jpg",
+   "beauty_score": "3.9833",
+   "gender": "Male",
+   "race": "Caucasian",
+   "subset": "eval",
+   "source_index": "37",
+   "pred": 93.7,
+   "scores": {
+    "symmetry": 85.0,
+    "proportion": 96.2,
+    "style": 87.7,
+    "skin": 88.0,
+    "pose": 99.9
+   },
+   "style_details": {
+    "sharpness": 99.3,
+    "exposure": 99.7,
+    "contrast": 99.9,
+    "composition": 49.0
+   },
+   "metrics": {
+    "roll_degrees": 0.6,
+    "geometric_symmetry": 90.2,
+    "pixel_symmetry": 75.2,
+    "eye_mouth_ratio": 1.032,
+    "mouth_eye_ratio": 0.845,
+    "face_brightness": 136.3,
+    "detection_confidence": 0.939
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF707.jpg",
+   "beauty_score": "2.0667",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "135",
+   "pred": 93.8,
+   "scores": {
+    "symmetry": 94.6,
+    "proportion": 90.6,
+    "style": 82.8,
+    "skin": 69.7,
+    "pose": 96.2
+   },
+   "style_details": {
+    "sharpness": 74.9,
+    "exposure": 98.7,
+    "contrast": 100.0,
+    "composition": 75.5
+   },
+   "metrics": {
+    "roll_degrees": -3.3,
+    "geometric_symmetry": 96.4,
+    "pixel_symmetry": 91.4,
+    "eye_mouth_ratio": 1.138,
+    "mouth_eye_ratio": 0.889,
+    "face_brightness": 147.4,
+    "detection_confidence": 0.948
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM1426.jpg",
+   "beauty_score": "2.0833",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "613",
+   "pred": 93.2,
+   "scores": {
+    "symmetry": 89.8,
+    "proportion": 96.3,
+    "style": 77.5,
+    "skin": 46.1,
+    "pose": 99.9
+   },
+   "style_details": {
+    "sharpness": 83.3,
+    "exposure": 91.0,
+    "contrast": 97.3,
+    "composition": 63.9
+   },
+   "metrics": {
+    "roll_degrees": -0.6,
+    "geometric_symmetry": 96.7,
+    "pixel_symmetry": 77.0,
+    "eye_mouth_ratio": 1.031,
+    "mouth_eye_ratio": 0.841,
+    "face_brightness": 159.6,
+    "detection_confidence": 0.953
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM1084.jpg",
+   "beauty_score": "2.45",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "1876",
+   "pred": 92.2,
+   "scores": {
+    "symmetry": 79.2,
+    "proportion": 95.6,
+    "style": 85.3,
+    "skin": 82.4,
+    "pose": 93.5
+   },
+   "style_details": {
+    "sharpness": 79.0,
+    "exposure": 99.8,
+    "contrast": 97.0,
+    "composition": 73.4
+   },
+   "metrics": {
+    "roll_degrees": -4.4,
+    "geometric_symmetry": 90.0,
+    "pixel_symmetry": 59.3,
+    "eye_mouth_ratio": 1.092,
+    "mouth_eye_ratio": 0.82,
+    "face_brightness": 143.1,
+    "detection_confidence": 0.949
+   },
+   "error": null
+  },
+  {
+   "image_name": "CM111.jpg",
+   "beauty_score": "3.0",
+   "gender": "Male",
+   "race": "Caucasian",
+   "subset": "eval",
+   "source_index": "2141",
+   "pred": 89.9,
+   "scores": {
+    "symmetry": 79.0,
+    "proportion": 89.3,
+    "style": 71.9,
+    "skin": 32.4,
+    "pose": 95.2
+   },
+   "style_details": {
+    "sharpness": 82.5,
+    "exposure": 92.1,
+    "contrast": 91.9,
+    "composition": 50.6
+   },
+   "metrics": {
+    "roll_degrees": -3.8,
+    "geometric_symmetry": 84.7,
+    "pixel_symmetry": 68.4,
+    "eye_mouth_ratio": 0.984,
+    "mouth_eye_ratio": 0.9,
+    "face_brightness": 121.8,
+    "detection_confidence": 0.951
+   },
+   "error": null
+  },
+  {
+   "image_name": "CF115.jpg",
+   "beauty_score": "2.7333",
+   "gender": "Female",
+   "race": "Caucasian",
+   "subset": "eval",
+   "source_index": "2005",
+   "pred": 85.8,
+   "scores": {
+    "symmetry": 42.6,
+    "proportion": 97.1,
+    "style": 75.2,
+    "skin": 58.8,
+    "pose": 99.8
+   },
+   "style_details": {
+    "sharpness": 79.8,
+    "exposure": 92.9,
+    "contrast": 87.3,
+    "composition": 54.0
+   },
+   "metrics": {
+    "roll_degrees": -0.8,
+    "geometric_symmetry": 65.6,
+    "pixel_symmetry": 0.0,
+    "eye_mouth_ratio": 1.099,
+    "mouth_eye_ratio": 0.821,
+    "face_brightness": 157.2,
+    "detection_confidence": 0.949
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM970.jpg",
+   "beauty_score": "2.9",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "1474",
+   "pred": 93.9,
+   "scores": {
+    "symmetry": 88.7,
+    "proportion": 96.4,
+    "style": 85.0,
+    "skin": 85.5,
+    "pose": 97.9
+   },
+   "style_details": {
+    "sharpness": 87.1,
+    "exposure": 93.5,
+    "contrast": 84.0,
+    "composition": 73.9
+   },
+   "metrics": {
+    "roll_degrees": 2.5,
+    "geometric_symmetry": 98.3,
+    "pixel_symmetry": 71.0,
+    "eye_mouth_ratio": 1.101,
+    "mouth_eye_ratio": 0.793,
+    "face_brightness": 156.5,
+    "detection_confidence": 0.942
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM1371.jpg",
+   "beauty_score": "2.65",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "818",
+   "pred": 94.3,
+   "scores": {
+    "symmetry": 96.0,
+    "proportion": 96.2,
+    "style": 79.0,
+    "skin": 80.4,
+    "pose": 100.0
+   },
+   "style_details": {
+    "sharpness": 80.2,
+    "exposure": 85.0,
+    "contrast": 92.8,
+    "composition": 59.6
+   },
+   "metrics": {
+    "roll_degrees": -0.2,
+    "geometric_symmetry": 93.9,
+    "pixel_symmetry": 100.0,
+    "eye_mouth_ratio": 1.063,
+    "mouth_eye_ratio": 0.878,
+    "face_brightness": 165.6,
+    "detection_confidence": 0.946
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM1273.jpg",
+   "beauty_score": "2.7667",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "1065",
+   "pred": 93.5,
+   "scores": {
+    "symmetry": 91.4,
+    "proportion": 95.4,
+    "style": 79.2,
+    "skin": 77.0,
+    "pose": 99.6
+   },
+   "style_details": {
+    "sharpness": 73.1,
+    "exposure": 99.1,
+    "contrast": 82.8,
+    "composition": 67.3
+   },
+   "metrics": {
+    "roll_degrees": 1.0,
+    "geometric_symmetry": 90.9,
+    "pixel_symmetry": 92.2,
+    "eye_mouth_ratio": 1.034,
+    "mouth_eye_ratio": 0.867,
+    "face_brightness": 134.1,
+    "detection_confidence": 0.952
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF754.jpg",
+   "beauty_score": "2.35",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "1988",
+   "pred": 94.4,
+   "scores": {
+    "symmetry": 95.5,
+    "proportion": 97.7,
+    "style": 82.5,
+    "skin": 77.6,
+    "pose": 91.0
+   },
+   "style_details": {
+    "sharpness": 63.8,
+    "exposure": 99.9,
+    "contrast": 97.4,
+    "composition": 85.6
+   },
+   "metrics": {
+    "roll_degrees": -5.2,
+    "geometric_symmetry": 93.0,
+    "pixel_symmetry": 100.0,
+    "eye_mouth_ratio": 1.041,
+    "mouth_eye_ratio": 0.845,
+    "face_brightness": 141.8,
+    "detection_confidence": 0.944
+   },
+   "error": null
+  },
+  {
+   "image_name": "CM641.jpg",
+   "beauty_score": "4.15",
+   "gender": "Male",
+   "race": "Caucasian",
+   "subset": "eval",
+   "source_index": "1911",
+   "pred": 90.1,
+   "scores": {
+    "symmetry": 72.0,
+    "proportion": 90.0,
+    "style": 84.5,
+    "skin": 78.2,
+    "pose": 85.2
+   },
+   "style_details": {
+    "sharpness": 88.2,
+    "exposure": 87.7,
+    "contrast": 85.0,
+    "composition": 79.9
+   },
+   "metrics": {
+    "roll_degrees": -6.8,
+    "geometric_symmetry": 74.6,
+    "pixel_symmetry": 67.0,
+    "eye_mouth_ratio": 0.97,
+    "mouth_eye_ratio": 0.85,
+    "face_brightness": 163.0,
+    "detection_confidence": 0.949
+   },
+   "error": null
+  },
+  {
+   "image_name": "CF363.jpg",
+   "beauty_score": "3.0667",
+   "gender": "Female",
+   "race": "Caucasian",
+   "subset": "eval",
+   "source_index": "2094",
+   "pred": 85.8,
+   "scores": {
+    "symmetry": 47.8,
+    "proportion": 92.1,
+    "style": 72.6,
+    "skin": 87.1,
+    "pose": 99.6
+   },
+   "style_details": {
+    "sharpness": 88.2,
+    "exposure": 48.9,
+    "contrast": 84.3,
+    "composition": 53.4
+   },
+   "metrics": {
+    "roll_degrees": 1.0,
+    "geometric_symmetry": 72.7,
+    "pixel_symmetry": 1.7,
+    "eye_mouth_ratio": 1.008,
+    "mouth_eye_ratio": 0.876,
+    "face_brightness": 193.8,
+    "detection_confidence": 0.949
+   },
+   "error": null
+  },
+  {
+   "image_name": "CF451.jpg",
+   "beauty_score": "2.8333",
+   "gender": "Female",
+   "race": "Caucasian",
+   "subset": "eval",
+   "source_index": "2036",
+   "pred": 85.2,
+   "scores": {
+    "symmetry": 46.8,
+    "proportion": 90.8,
+    "style": 73.9,
+    "skin": 56.3,
+    "pose": 90.5
+   },
+   "style_details": {
+    "sharpness": 92.5,
+    "exposure": 69.6,
+    "contrast": 95.5,
+    "composition": 47.5
+   },
+   "metrics": {
+    "roll_degrees": -5.4,
+    "geometric_symmetry": 72.0,
+    "pixel_symmetry": 0.0,
+    "eye_mouth_ratio": 0.992,
+    "mouth_eye_ratio": 0.906,
+    "face_brightness": 178.3,
+    "detection_confidence": 0.953
+   },
+   "error": null
+  },
+  {
+   "image_name": "CM644.jpg",
+   "beauty_score": "4.1167",
+   "gender": "Male",
+   "race": "Caucasian",
+   "subset": "eval",
+   "source_index": "1778",
+   "pred": 89.5,
+   "scores": {
+    "symmetry": 56.9,
+    "proportion": 98.4,
+    "style": 87.1,
+    "skin": 76.4,
+    "pose": 95.6
+   },
+   "style_details": {
+    "sharpness": 100.0,
+    "exposure": 99.0,
+    "contrast": 92.0,
+    "composition": 60.1
+   },
+   "metrics": {
+    "roll_degrees": -3.6,
+    "geometric_symmetry": 66.9,
+    "pixel_symmetry": 38.3,
+    "eye_mouth_ratio": 1.092,
+    "mouth_eye_ratio": 0.801,
+    "face_brightness": 133.7,
+    "detection_confidence": 0.928
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF971.jpg",
+   "beauty_score": "4.1",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "137",
+   "pred": 92.2,
+   "scores": {
+    "symmetry": 91.4,
+    "proportion": 87.2,
+    "style": 75.8,
+    "skin": 72.1,
+    "pose": 99.9
+   },
+   "style_details": {
+    "sharpness": 86.8,
+    "exposure": 70.7,
+    "contrast": 99.0,
+    "composition": 49.8
+   },
+   "metrics": {
+    "roll_degrees": 0.5,
+    "geometric_symmetry": 96.4,
+    "pixel_symmetry": 82.1,
+    "eye_mouth_ratio": 0.957,
+    "mouth_eye_ratio": 0.885,
+    "face_brightness": 177.5,
+    "detection_confidence": 0.954
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF1007.jpg",
+   "beauty_score": "2.7",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "1188",
+   "pred": 91.8,
+   "scores": {
+    "symmetry": 83.3,
+    "proportion": 94.7,
+    "style": 76.2,
+    "skin": 69.0,
+    "pose": 99.6
+   },
+   "style_details": {
+    "sharpness": 65.6,
+    "exposure": 81.6,
+    "contrast": 91.7,
+    "composition": 80.5
+   },
+   "metrics": {
+    "roll_degrees": -1.0,
+    "geometric_symmetry": 91.5,
+    "pixel_symmetry": 68.0,
+    "eye_mouth_ratio": 1.127,
+    "mouth_eye_ratio": 0.758,
+    "face_brightness": 168.7,
+    "detection_confidence": 0.943
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM354.jpg",
+   "beauty_score": "2.6167",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "1297",
+   "pred": 93.5,
+   "scores": {
+    "symmetry": 92.5,
+    "proportion": 97.6,
+    "style": 76.1,
+    "skin": 82.5,
+    "pose": 99.3
+   },
+   "style_details": {
+    "sharpness": 84.1,
+    "exposure": 69.1,
+    "contrast": 90.8,
+    "composition": 55.1
+   },
+   "metrics": {
+    "roll_degrees": 1.4,
+    "geometric_symmetry": 92.7,
+    "pixel_symmetry": 92.2,
+    "eye_mouth_ratio": 1.088,
+    "mouth_eye_ratio": 0.786,
+    "face_brightness": 178.7,
+    "detection_confidence": 0.944
+   },
+   "error": null
+  },
+  {
+   "image_name": "CF580.jpg",
+   "beauty_score": "4.2833",
+   "gender": "Female",
+   "race": "Caucasian",
+   "subset": "eval",
+   "source_index": "1874",
+   "pred": 92.1,
+   "scores": {
+    "symmetry": 80.2,
+    "proportion": 96.1,
+    "style": 80.5,
+    "skin": 79.3,
+    "pose": 99.8
+   },
+   "style_details": {
+    "sharpness": 66.0,
+    "exposure": 99.1,
+    "contrast": 95.0,
+    "composition": 73.9
+   },
+   "metrics": {
+    "roll_degrees": 0.7,
+    "geometric_symmetry": 83.9,
+    "pixel_symmetry": 73.3,
+    "eye_mouth_ratio": 1.041,
+    "mouth_eye_ratio": 0.863,
+    "face_brightness": 133.9,
+    "detection_confidence": 0.948
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF371.jpg",
+   "beauty_score": "2.45",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "402",
+   "pred": 92.7,
+   "scores": {
+    "symmetry": 82.1,
+    "proportion": 96.5,
+    "style": 84.1,
+    "skin": 76.0,
+    "pose": 94.7
+   },
+   "style_details": {
+    "sharpness": 77.9,
+    "exposure": 89.8,
+    "contrast": 97.5,
+    "composition": 83.8
+   },
+   "metrics": {
+    "roll_degrees": -4.0,
+    "geometric_symmetry": 85.0,
+    "pixel_symmetry": 76.6,
+    "eye_mouth_ratio": 1.099,
+    "mouth_eye_ratio": 0.77,
+    "face_brightness": 160.9,
+    "detection_confidence": 0.945
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM1518.jpg",
+   "beauty_score": "2.8833",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "1795",
+   "pred": 94.0,
+   "scores": {
+    "symmetry": 93.8,
+    "proportion": 92.0,
+    "style": 83.3,
+    "skin": 46.4,
+    "pose": 99.7
+   },
+   "style_details": {
+    "sharpness": 86.2,
+    "exposure": 97.8,
+    "contrast": 99.6,
+    "composition": 80.0
+   },
+   "metrics": {
+    "roll_degrees": 0.9,
+    "geometric_symmetry": 93.0,
+    "pixel_symmetry": 95.1,
+    "eye_mouth_ratio": 0.983,
+    "mouth_eye_ratio": 0.844,
+    "face_brightness": 149.5,
+    "detection_confidence": 0.949
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF1300.jpg",
+   "beauty_score": "2.6167",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "2110",
+   "pred": 93.3,
+   "scores": {
+    "symmetry": 84.9,
+    "proportion": 95.5,
+    "style": 84.8,
+    "skin": 86.5,
+    "pose": 99.9
+   },
+   "style_details": {
+    "sharpness": 77.9,
+    "exposure": 94.2,
+    "contrast": 86.2,
+    "composition": 83.5
+   },
+   "metrics": {
+    "roll_degrees": 0.5,
+    "geometric_symmetry": 89.1,
+    "pixel_symmetry": 77.2,
+    "eye_mouth_ratio": 1.005,
+    "mouth_eye_ratio": 0.844,
+    "face_brightness": 155.6,
+    "detection_confidence": 0.944
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM679.jpg",
+   "beauty_score": "2.2833",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "1060",
+   "pred": 94.0,
+   "scores": {
+    "symmetry": 96.7,
+    "proportion": 96.3,
+    "style": 76.6,
+    "skin": 84.6,
+    "pose": 98.9
+   },
+   "style_details": {
+    "sharpness": 77.0,
+    "exposure": 99.6,
+    "contrast": 69.8,
+    "composition": 51.8
+   },
+   "metrics": {
+    "roll_degrees": 1.8,
+    "geometric_symmetry": 96.8,
+    "pixel_symmetry": 96.6,
+    "eye_mouth_ratio": 1.014,
+    "mouth_eye_ratio": 0.853,
+    "face_brightness": 135.8,
+    "detection_confidence": 0.953
+   },
+   "error": null
+  },
+  {
+   "image_name": "AM35.jpg",
+   "beauty_score": "3.15",
+   "gender": "Male",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "1855",
+   "pred": 93.4,
+   "scores": {
+    "symmetry": 91.4,
+    "proportion": 96.3,
+    "style": 77.6,
+    "skin": 80.5,
+    "pose": 98.4
+   },
+   "style_details": {
+    "sharpness": 63.5,
+    "exposure": 88.3,
+    "contrast": 99.8,
+    "composition": 69.1
+   },
+   "metrics": {
+    "roll_degrees": -2.1,
+    "geometric_symmetry": 91.6,
+    "pixel_symmetry": 91.1,
+    "eye_mouth_ratio": 1.013,
+    "mouth_eye_ratio": 0.827,
+    "face_brightness": 162.5,
+    "detection_confidence": 0.948
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF252.jpg",
+   "beauty_score": "2.7833",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "749",
+   "pred": 94.5,
+   "scores": {
+    "symmetry": 89.5,
+    "proportion": 97.2,
+    "style": 87.2,
+    "skin": 88.2,
+    "pose": 99.9
+   },
+   "style_details": {
+    "sharpness": 78.4,
+    "exposure": 98.1,
+    "contrast": 92.7,
+    "composition": 84.8
+   },
+   "metrics": {
+    "roll_degrees": 0.6,
+    "geometric_symmetry": 85.4,
+    "pixel_symmetry": 97.2,
+    "eye_mouth_ratio": 1.035,
+    "mouth_eye_ratio": 0.827,
+    "face_brightness": 148.8,
+    "detection_confidence": 0.945
+   },
+   "error": null
+  },
+  {
+   "image_name": "AF1749.jpg",
+   "beauty_score": "3.1667",
+   "gender": "Female",
+   "race": "Asian",
+   "subset": "eval",
+   "source_index": "1743",
+   "pred": 92.8,
+   "scores": {
+    "symmetry": 94.0,
+    "proportion": 89.6,
+    "style": 77.3,
+    "skin": 86.7,
+    "pose": 93.4
+   },
+   "style_details": {
+    "sharpness": 73.8,
+    "exposure": 72.2,
+    "contrast": 88.1,
+    "composition": 72.3
+   },
+   "metrics": {
+    "roll_degrees": 4.4,
+    "geometric_symmetry": 98.0,
+    "pixel_symmetry": 86.5,
+    "eye_mouth_ratio": 0.994,
+    "mouth_eye_ratio": 0.876,
+    "face_brightness": 103.7,
+    "detection_confidence": 0.952
+   },
+   "error": null
+  }
+ ]
+}

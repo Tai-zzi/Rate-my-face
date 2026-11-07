@@ -15,12 +15,12 @@ RUN apt-get update \
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-COPY app.py .
+COPY app.py beauty.py ./
 COPY static/ ./static/
 COPY models/ ./models/
 
-# 이미지 빌드 단계에서 모델이 정상 로드되는지 검증 (실패 시 빌드 중단)
-RUN python -c "import app; print('model check OK:', app.MODEL_PATH.name, app.DETECTOR is not None)"
+# 이미지 빌드 단계에서 모델(검출 YuNet + 임베딩 SFace + 회귀 헤드)이 정상 로드되는지 검증
+RUN python -c "import app; print('model check OK:', app.MODEL_PATH.name, app.SCORING_VERSION, app.BEAUTY_HEAD.meta)"
 
 # 배포 버전 식별 정보 (CI에서 --build-arg 로 주입)
 ARG APP_VERSION=1.0.0

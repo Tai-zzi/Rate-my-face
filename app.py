@@ -53,6 +53,13 @@ def load_detector() -> cv2.FaceDetectorYN:
 
 DETECTOR = load_detector()
 
+# v2: 사전학습 얼굴 임베딩 기반 매력도 회귀 헤드 (beauty.py, models/beauty_head.json)
+from beauty import HEAD_PATH as _HEAD_PATH, BeautyHead  # noqa: E402
+
+BEAUTY_HEAD = BeautyHead()
+BEAUTY_LABEL_RANGE = tuple(__import__("json").loads(_HEAD_PATH.read_text(encoding="utf-8"))["train_label_range"])
+SCORING_VERSION = "v2-sface-ridge"
+
 
 # ---------------------------------------------------------------------------
 # 유틸
@@ -226,9 +233,14 @@ def analyze(img: np.ndarray) -> dict:
     # 고개 기울기 페널티(포즈)
     pose = gauss_score(abs(roll), 0, 12)
 
-    # --- 종합 점수 (재미용으로 55~98 범위에 매핑) ---
+    # --- v1 휴리스틱 점수 (참고용으로 유지) ---
     raw = 0.35 * symmetry + 0.25 * proportion + 0.30 * style + 0.10 * pose
-    total = round(55 + raw / 100 * 43, 1)
+    legacy_total = round(55 + raw / 100 * 43, 1)
+
+    # --- v2 종합 점수: 사전학습 얼굴 임베딩(SFace) + 회귀 헤드가 예측한 사람 평가 점수(1~5) ---
+    human_pred = BEAUTY_HEAD.predict(img, f)
+    lo, hi = BEAUTY_LABEL_RANGE
+    total = round(float(np.clip(60 + (human_pred - lo) / (hi - lo) * 35, 55, 98)), 1)
 
     details = {
         "symmetry": round(symmetry, 1),
@@ -269,7 +281,10 @@ def analyze(img: np.ndarray) -> dict:
         "image_size": [W, H],
         "report": report,
         "disclaimer": DISCLAIMER,
-        "model": "OpenCV YuNet face_detection_yunet_2023mar (CPU) + 특징점 기하/이미지 분석 휴리스틱",
+        "predicted_human_score": round(human_pred, 3),
+        "legacy_score": legacy_total,
+        "scoring_version": SCORING_VERSION,
+        "model": "OpenCV YuNet 검출 + OpenCV Zoo SFace 임베딩 + Ridge 회귀(SCUT-FBP5500 30장) (CPU)",
         "elapsed_ms": round((time.perf_counter() - t0) * 1000, 1),
         "version": APP_VERSION,
         "revision": APP_REVISION,
