@@ -12,6 +12,14 @@ $stop = Join-Path $OutDir "stop.flag"
 $utf8 = New-Object System.Text.UTF8Encoding($false)
 [System.IO.File]::WriteAllText($csv, "seq,start_utc,end_utc,latency_ms,http,analysis_ok,version,revision,score,error`n", $utf8)
 
+# Keep the machine awake while monitoring (like a media player; released when this process exits).
+# A laptop entering Modern Standby during deploy #3 created a 102 s unobserved gap.
+try {
+    Add-Type -Namespace Native -Name Power -MemberDefinition '[DllImport("kernel32.dll")] public static extern uint SetThreadExecutionState(uint esFlags);'
+    # ES_CONTINUOUS | ES_SYSTEM_REQUIRED | ES_DISPLAY_REQUIRED
+    [void][Native.Power]::SetThreadExecutionState([uint32]"0x80000003")
+} catch { }
+
 $seq = 0
 while (-not (Test-Path $stop)) {
     $seq++
